@@ -117,7 +117,7 @@ docker container run -it --name nginx nginx bash
 exit
 
 # Ubuntu contianer in a Mac
-docker container run -it --nmae ubuntu ubuntu
+docker container run -it --name ubuntu ubuntu
 # Installing packages
 apt-get update
 exit
