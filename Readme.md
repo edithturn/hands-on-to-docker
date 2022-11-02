@@ -47,11 +47,21 @@ docker start <id-stopped container>
 # "docker container start" will use a stopped container to start it.
 ```
 
-- Create containers with customized name
+- Create customized containers
 
 ```bash
 # Container named GDGContainer
 docker container run --publish 80:80 --detach --name GDGContainer nginx
+
+# We can specify the port, the name, also the version of the image
+# "-T" command tries to check Nginx configuration
+docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 nginx -T
+```
+
+```bash
+# We can specify the port, the name, also the version of the image
+# "-T" command tries to check Nginx configuration
+docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 nginx -T
 ```
 
 - docker logs for containers
@@ -72,15 +82,7 @@ docker container rm  <container_id>
 docker container rm  -f <container_id>
 ```
 
-- Customizing our containers
-
-```bash
-# We can specify the port, the name, also the version of the image
-# "-T" command tries to check Nginx configuration
-docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 nginx -T
-```
-
-- Manage Multiple Containers: nginx, Percona MySQl and httpd
+- Manage Multiple Containers: nginx, MySQl and httpd
 
 ```bash
 # Run nginx container
@@ -162,7 +164,7 @@ docker image push edithturn/myimage:1.0.0
 # Check your image in DockerHub: https://hub.docker.com/
 ```
 
-- Dockerizing our web application
+- Dockerizing our web application (OPTIONAL)
 
 ```Dockerfile
 # Use an official Node runtime as the parent image
