@@ -55,7 +55,7 @@ docker container run --publish 80:80 --detach --name GDGContainer nginx
 
 # We can specify the port, the name, also the version of the image
 # "-T" command tries to check Nginx configuration
-docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 -T
+docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 nginx -T
 ```
 
 - docker logs for containers
