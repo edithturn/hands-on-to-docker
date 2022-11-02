@@ -58,12 +58,6 @@ docker container run --publish 80:80 --detach --name GDGContainer nginx
 docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 nginx -T
 ```
 
-```bash
-# We can specify the port, the name, also the version of the image
-# "-T" command tries to check Nginx configuration
-docker container run --publish 8080:80 --name nginxtest -d nginx:1.23 nginx -T
-```
-
 - docker logs for containers
 
 ```bash
@@ -200,3 +194,6 @@ docker run --detach --restart always \
 --name pmm-server \
 percona/pmm-server:2
 ```
+
+Resources:
+Some of these examples are taking from the amaizng course in Udemy of Bret Fisher and Inroduction to Docker in cloudskillsboost.
