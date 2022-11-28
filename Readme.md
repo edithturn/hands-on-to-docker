@@ -196,4 +196,4 @@ percona/pmm-server:2
 ```
 
 Resources:
-Some of these examples are taking from the amaizng course in Udemy of Bret Fisher and Inroduction to Docker in cloudskillsboost.
+Some of these examples are taking from the amaizng course in [Udemy of Bret Fisher](https://www.udemy.com/course/docker-mastery/learn/lecture/6804732?start=30#announcements) and **Inroduction to Docker in cloudskillsboost**
